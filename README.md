@@ -1,15 +1,13 @@
 # Moltres
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/moltres`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This is the Ruby on Moltres based on Ruby on Rulers framework from the book "Rebuilding Rails" by Noah Gibbs. You can find the canonical branch of this framework at "http://github.com/noahgibbs/rulers".
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'moltres'
+gem 'moltres', git: 'git@github.com:marinalimeira/moltres.git'
 ```
 
 And then execute:
@@ -20,19 +18,17 @@ Or install it yourself as:
 
     $ gem install moltres
 
+For git gems, you'll need to run "bundle exec rackup" instead of just "rackup".
+
 ## Usage
 
-TODO: Write usage instructions here
+This framework is instructional and there are good reasons not to use it unmodified in production. Rails is a relatively secure framework, but Moltres is not.
 
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+For further details, see the Rails security guides and/or chapter 10 of Rebuilding Rails.
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/moltres/fork )
+1. Fork it ( https://github.com/marinalimeira/moltres/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

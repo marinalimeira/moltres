@@ -6,9 +6,14 @@ module Moltres
   class Application
     def call(env)
       klass, act = get_controller_and_action(env)
-      controller = klass.new(env)
-      text = controller.send(act)
-      [ 200, { 'Content-Type' => 'text/html'}, [text]]
+      begin
+        controller = klass.new(env)
+        text = controller.send(act)
+      rescue
+        [ 500, { 'Content-Type' => 'text/html'}, ["Internal Server Error (500)"]]
+      else
+        [ 200, { 'Content-Type' => 'text/html'}, [text]]
+      end
     end
   end
 

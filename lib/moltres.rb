@@ -1,4 +1,5 @@
 require "moltres/version"
+require "moltres/array"
 
 module Moltres
   class Application

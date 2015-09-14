@@ -1,4 +1,5 @@
 # Moltres
+[![Build Status](https://snap-ci.com/marinalimeira/moltres/branch/master/build_image)](https://snap-ci.com/marinalimeira/moltres/branch/master)
 
 This is the Ruby on Moltres based on Ruby on Rulers framework from the book "Rebuilding Rails" by Noah Gibbs. You can find the canonical branch of this framework at "http://github.com/noahgibbs/rulers".
 
